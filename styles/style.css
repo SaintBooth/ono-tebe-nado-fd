@@ -92,6 +92,7 @@
 .cover__description {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
     padding-bottom: 50px; 
     font-weight: 400;
     font-size: 22px;
@@ -102,9 +103,19 @@
 }
 
 .cover__description-text {
+    word-spacing: 19px;
     z-index: 2;
 }
 
 .bet-button {
+    margin-left: auto;
+    width: 256px;
+    height: 51px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
     z-index: 2;
 }
