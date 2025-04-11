@@ -6,13 +6,6 @@
   box-sizing: border-box;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  padding: 87px 50px;
-  align-items: center;
-}
-
 address {
   display: block;
   font-style: normal;

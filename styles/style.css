@@ -1,3 +1,10 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 87px 50px;
+  align-items: center;
+}
+
 .header__menu {
   font-weight: 400;
   font-size: 18px;
@@ -8,12 +15,15 @@
   width: 148px;
 }
 
-.header__address {
-  max-width: 240px;
-  justify-self: end;
+.address {
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
+}
+
+.header__address {
+  max-width: 240px;
+  justify-self: end;
   padding-right: 37px;
 }
 
@@ -35,7 +45,7 @@
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-color: black;
   padding: 0 50px;
   z-index: 0;
@@ -49,10 +59,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-}
-
-.cover::before {
-  background-color: grey;
 }
 
 .cover__title {
@@ -107,13 +113,14 @@
 .bet-button {
   margin-left: auto;
   width: 256px;
-  height: 51px;
+  padding: 11px 0;
   background: transparent;
   border: 1px solid white;
   color: white;
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
+  cursor: pointer;
   z-index: 2;
 }
 
@@ -130,7 +137,8 @@
 
 .lots__card-list {
   padding-top: 27px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   list-style: none;
 }
@@ -172,25 +180,22 @@
   z-index: 1;
 }
 
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
+.card_type {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .lots__look-more-link {
@@ -232,16 +237,17 @@
   line-height: 24px;
 }
 
+.about__text p {
+  padding-bottom: 25px;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  padding: 180px 50px 0 50px;
+  padding: 155px 50px 0 50px;
 }
 
-.footer address {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
+.footer__address {
   letter-spacing: 0%;
 }
 
@@ -258,6 +264,10 @@
   line-height: 100%;
   text-align: center;
   list-style: none;
+}
+
+.footer__menu-link_active a {
+  text-decoration: none;
 }
 
 .footer__social-list {
