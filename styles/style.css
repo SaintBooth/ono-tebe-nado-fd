@@ -9,6 +9,8 @@
 }
 
 .header__address {
+  max-width: 240px;
+  justify-self: end;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
@@ -27,11 +29,6 @@
 
 .header__link_active {
   text-decoration: none;
-}
-
-.header__address {
-  max-width: 240px;
-  justify-self: end;
 }
 
 .cover {
