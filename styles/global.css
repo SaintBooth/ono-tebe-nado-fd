@@ -9,8 +9,14 @@
 header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding: 92px 50px;
+  padding: 87px 50px;
   align-items: center;
+}
+
+address {
+  display: block;
+  font-style: normal;
+  unicode-bidi: normal;
 }
 
 body {
@@ -41,7 +47,7 @@ a {
 
 img {
   width: 100%;
-  min-width: 148px;
+  /*min-width: 148px;*/
 }
 
 button {
