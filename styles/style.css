@@ -208,12 +208,23 @@ header {
 }
 
 .about__column.about__logo {
+  position: relative;
   padding-left: 47px;
   padding-top: 39px;
 }
 
-.about__logo-image {
+.about__logo-circle {
+  background-color: black;
   width: 240px;
+  height: 240px;
+  border-radius: 100%;
+}
+
+.about__logo-image {
+  width: 141.54px;
+  position: absolute;
+  top: 105px;
+  left: 97px;
 }
 
 .about {
